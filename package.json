@@ -4,11 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+   "dev": "vite --open",
+   "build:test": "vue-tsc && vite build --mode test",
+   "build:pro": "vue-tsc && vite build --mode production",
+   "preview": "vite preview"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "element-plus": "^2.7.3",
+    "path": "^0.12.7",
     "vue": "^3.4.21"
   },
   "devDependencies": {
