@@ -8,7 +8,14 @@ import App from './App.vue'
 //svg需要配置代码
 import 'virtual:svg-icons-register'
 
+//引入全局样式
+import '@/styles/index.scss'
+
 const app = createApp(App)
+
+//注册svg组件为全局组件
+import SvgIcon from '@/components/SvgIcon/index.vue';
+app.component('SvgIcon', SvgIcon)
 
 app.use(ElementPlus, {
    locale: zhCn,
